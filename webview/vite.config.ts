@@ -5,7 +5,7 @@ import autoprefixer from "autoprefixer";
 import tailwindcss from "tailwindcss";
 
 export default defineConfig({
-  root: 'webview', // 프로젝트 루트 디렉토리
+  root: './webview', // 프로젝트 루트 디렉토리
   css: {
     postcss: {
       plugins: [tailwindcss, autoprefixer],
