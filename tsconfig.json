@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+	  "module": "Node16",
+	  "target": "ES2022",
+	  "outDir": "out",
+	  "lib": ["ES2022", "DOM"], /* Webview에서 DOM 관련 타입을 사용 가능하도록 추가 */
+	  "sourceMap": true,
+	  "rootDir": "src",
+	  "strict": true, /* 엄격한 타입 검사 활성화 */
+	  /* Additional Checks */
+	  "noImplicitReturns": true, /* 모든 코드 경로에서 명시적 반환이 필요하도록 설정 */
+	  "noFallthroughCasesInSwitch": true, /* switch 문에서 case의 누락 방지 */
+	  "noUnusedParameters": true, /* 사용되지 않는 매개변수에 대한 경고 */
+	  "esModuleInterop": true, /* CommonJS 및 ES Module 간의 호환성 활성화 */
+	  "skipLibCheck": true, /* 의존성 라이브러리의 타입 검사를 건너뜀 */
+	  "moduleResolution": "Node16", /* Node.js 모듈 해석 전략 */
+	  "types": ["node", "vscode", "jest", "mocha"], /* VS Code API 및 Node.js 타입 사용 */
+	  "allowSyntheticDefaultImports": true, /* default import를 허용 */
+	  "experimentalDecorators": true /* 데코레이터 사용 가능 */
+	},
+	"exclude": ["node_modules", "webview/**"],
+	"include": ["src/**/*.ts"]
+  }
+  
